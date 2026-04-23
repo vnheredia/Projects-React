@@ -10,11 +10,11 @@ export default function Sum({setPantalla}){
         <div>
         <h1>Sum</h1>
         <input type="number" value={num1} onChange={(e)=>setNum1(e.target.value)} placeholder="Number 1"/>
-        <p></p>
+        <br></br>
         <input type="number" value={num2} onChange={(e)=>setNum2(e.target.value)} placeholder="Number 2"/>
-        <p></p>
+        <br></br>
         <button onClick={sumar}>Sum</button>
-        <p></p>                    
+        <br></br>                    
         <button onClick={() => setPantalla("Home")}>Go to Home</button>
         </div>
     );

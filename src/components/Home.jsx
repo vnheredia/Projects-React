@@ -3,7 +3,7 @@ export default function Home({setPantalla}){
         <div>
         <h1>Home</h1>
         <button onClick={() => setPantalla("Sum")}>Go to Sum</button>
-        <p></p>
+        <br></br>
         <button onClick={() => setPantalla("Calculator")}>Go to Calculator</button>
         </div>
     );
