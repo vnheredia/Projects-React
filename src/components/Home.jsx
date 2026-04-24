@@ -5,6 +5,8 @@ export default function Home({setPantalla}){
         <button onClick={() => setPantalla("Sum")}>Go to Sum</button>
         <br></br>
         <button onClick={() => setPantalla("Calculator")}>Go to Calculator</button>
+        <br></br>
+        <button onClick={() => setPantalla("Search")}>Go to Search</button>
         </div>
     );
 }
