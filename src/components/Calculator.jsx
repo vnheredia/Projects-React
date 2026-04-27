@@ -67,7 +67,7 @@ export default function Calculator({setPantalla}){
             {display}
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 60px)", gap: "8px", justifyContent: "center" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 60px)", gap: "15px", justifyContent: "center" }}>
         <button onClick={borrarTodo} style={{ gridColumn: "span 2", background: "#ff4444", color: "white" }}>AC</button>
         <button onClick={borrarUltimo} style={{ background: "#ff9900", color: "white" }}>⌫</button>
         <button onClick={() => apretarOperacion("/")} style={{ background: "#ff9900", color: "white" }}>/</button>
@@ -91,8 +91,9 @@ export default function Calculator({setPantalla}){
         <button onClick ={() => apretarNumero(".")}>.</button>
         <button onClick={calcular} style={{ gridColumn: "span 2", background: "#00cc00", color: "white" }}>=</button>
 
-        <br></br>
-        <button onClick={() => setPantalla("Home")}>Go to Home</button>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "15px"}}>
+        <button className="btn home" onClick={() => setPantalla("Home")}>Go to Home</button>
+        </div>
         </div>
         </>
     )

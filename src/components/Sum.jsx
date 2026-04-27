@@ -7,15 +7,12 @@ export default function Sum({setPantalla}){
         alert("The result is: "+resultado);
     };
     return(
-        <div>
-        <h1>Sum</h1>
-        <input type="number" value={num1} onChange={(e)=>setNum1(e.target.value)} placeholder="Number 1"/>
-        <br></br>
-        <input type="number" value={num2} onChange={(e)=>setNum2(e.target.value)} placeholder="Number 2"/>
-        <br></br>
-        <button onClick={sumar}>Sum</button>
-        <br></br>                    
-        <button onClick={() => setPantalla("Home")}>Go to Home</button>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "15px"}}>
+            <h1>Sum</h1>
+            <input type="number" value={num1} onChange={(e)=>setNum1(e.target.value)} placeholder="Number 1"/>
+            <input type="number" value={num2} onChange={(e)=>setNum2(e.target.value)} placeholder="Number 2"/>
+            <button className="btn sum" onClick={sumar}>Sum</button>      
+            <button className="btn home"  onClick={() => setPantalla("Home")}>Go to Home</button>
         </div>
     );
 }

@@ -13,16 +13,16 @@ export default function Search({ onSelect, setPantalla }) {
 
   return (
   <div className="container">
-    <h1 className="title">Explora Series</h1>
+    <h1 className="title">Search Series</h1>
 
     <div className="search-bar">
       <input
-        placeholder="Buscar series..."
+        placeholder="Search series..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <button onClick={handleSearch}>Search</button>               
-      <button onClick={() => setPantalla("Home")}>Go to Home</button>
+      <button className="btn search"  onClick={handleSearch}>Search</button>               
+      <button className="btn home" onClick={() => setPantalla("Home")}>Go to Home</button>
     </div>
 
     {data.length === 0 ? (
