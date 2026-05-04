@@ -12,8 +12,7 @@ export default function Sum({ setPantalla }: SumProps) {
 
   const sumar = (): void => {
     const res = parseFloat(num1) + parseFloat(num2)
-    setResultado(res)  // mostramos en pantalla, no alert()
-  }
+    alert("The result is: "+res);  }
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "15px" }}>
