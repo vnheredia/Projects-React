@@ -1,3 +1,4 @@
+import Button from "../components/atoms/Button"
 import { Screen } from "../types"
 
 interface HomeProps {
@@ -11,15 +12,9 @@ export default function Home({ setPantalla }: HomeProps) {
       <p>Projects with React</p>
 
       <div style={{ display: "flex", gap: "20px", justifyContent: "center", marginTop: "30px" }}>
-        <button className="btn sum" onClick={() => setPantalla("sum")}>
-          Go to Sum
-        </button>
-        <button className="btn calculator" onClick={() => setPantalla("calculator")}>
-          Go to Calculator
-        </button>
-        <button className="btn search" onClick={() => setPantalla("search")}>
-          Go to Search
-        </button>
+        <Button label="Go to Sum" onClick={() => setPantalla("sum")} variant="sum" />
+        <Button label="Go to Calculator" onClick={() => setPantalla("calculator")} variant="calculator" />
+        <Button label="Go to Search" onClick={() => setPantalla("search")} variant="search" />
       </div>
     </div>
   )
