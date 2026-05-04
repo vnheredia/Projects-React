@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Botones base */
+button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Clases de botones por tipo */
+.btn.home       { background: #1a1a2e; color: white; }
+.btn.sum        { background: #1D9E75; color: white; }
+.btn.calculator { background: #378ADD; color: white; }
+.btn.search     { background: #7F77DD; color: white; }
